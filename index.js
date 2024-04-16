@@ -1,5 +1,5 @@
-import {IRCTC as main_class} from "./lib/workings.mjs";
-export default class IRCTC extends main_class{
+import {main_class} from "./lib/workings.mjs"
+class IRCTC extends main_class{
     constructor(){
         super();
     }
@@ -13,3 +13,4 @@ export default class IRCTC extends main_class{
         return await super.pnr_status(params);
     }
 };
+export {IRCTC};

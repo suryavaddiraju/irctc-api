@@ -1,7 +1,7 @@
 {
     "name": "irctc-api",
     "description": "A package built on top of IRCTC Website APIs to make train tickets , managing user profile faster and simpler. Currently this package only works on NodeJs environment and we were not recommending this to use on browser or any other Javascript environment.",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -31,6 +31,6 @@
         "node": ">=20.0.0",
         "npm": ">=10.0.0"
     },
-    "main": "index.mjs",
+    "module": "index.js",
     "type": "module"
 }
