@@ -1,4 +1,4 @@
-import {IRCTC} from "../index.js";
+import {IRCTC} from "irctc-api";
 const params = {
     "UPI": "9876543210@ybl", // Your NPCI UPI VPA ID
     "class": "2S", // class code such as 2A | 3A | SL | CC | 2S | FC | 1A
