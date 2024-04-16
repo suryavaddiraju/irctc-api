@@ -13,4 +13,4 @@ class IRCTC extends main_class{
         return await super.pnr_status(params);
     }
 };
-module.exports = IRCTC;
+module.exports = {IRCTC};
