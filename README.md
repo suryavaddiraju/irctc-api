@@ -9,11 +9,11 @@ To install the this package, simply type i or install irctc-api using the node p
 
 ## Prerequisite
 
-This Package uses [`viu`](https://github.com/atanunq/viu), A rust module uses iterm image protocol for displaying images.
+This Package uses [viu](https://github.com/atanunq/viu), A rust module uses iterm image protocol for displaying images.
 
 We use that for displaying captcha images on command line for login and bookings as to make your booking flow in a seamless way.
 
-Hence you are required to download the viu executable file related to your OS and Processor Architecture from the [viu release Assets](https://github.com/atanunq/viu/releases/latest) then rename the dwnloaded file to `viu.exe` and then add the folder where the `viu.exe` is stored in your environment variables.
+Hence you are required to download the viu executable file related to your OS and Processor Architecture from the [viu release Assets](https://github.com/atanunq/viu/releases/latest) then add the folder where the `viu` is stored in your environment variables.
 
 Remeber to add the folder path and not the viu.exe file path in your environment variables.
 
@@ -25,7 +25,7 @@ Remeber to add the folder path and not the viu.exe file path in your environment
 - We request to verify whether viu is working or not by giving the below command
 
 ```console
-viu example.jpeg -t
+$ viu example.jpeg -t
 ```
 
 ### Import
