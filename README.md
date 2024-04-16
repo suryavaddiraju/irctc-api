@@ -101,7 +101,7 @@ Any modifications will be overwritten the next time the `irctc-api` package is u
 
 ## License
 
-This SDK is distributed under the
+This package is distributed under the
 [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0),
 see LICENSE for more information.
 

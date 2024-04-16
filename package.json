@@ -11,7 +11,11 @@
     },
     "license": "Apache-2.0",
     "keywords": ["irctc", "api", "irctc-api","indian railways","indian railway api","indian railway","indian railways api","tatkal","tatkal booking","tatkal booking api","tatkal booking irctc","pnr status","pnr","IR","IRCTC","train","ticket","booking","automate","software"],
-    "author": "Vaddiraju Surya Teja <suryavaddiraju@proton.me> (http://github.com/suryavaddiraju)",
+    "author": {
+      "name": "Vaddiraju Surya Teja",
+      "email": "suryavaddiraju@proton.me",
+      "url": "http://github.com/suryavaddiraju"
+    },
     "bugs": {
       "url": "https://github.com/suryavaddiraju/irctc-api/issues"
     },
