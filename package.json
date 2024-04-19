@@ -1,7 +1,7 @@
 {
     "name": "irctc-api",
     "description": "A package built on top of IRCTC Website APIs to make train tickets , managing user profile faster and simpler. Currently this package only works on NodeJs environment and we were not recommending this to use on browser or any other Javascript environment.",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -20,6 +20,14 @@
       "url": "https://github.com/suryavaddiraju/irctc-api/issues"
     },
     "homepage": "https://dev.vaddiraju.in/irctc-api",
+    "files":[
+      "index.mjs",
+      "lib",
+      "LICENSE",
+      "README.md",
+      "package.json",
+      ".npmignore"
+    ],
     "dependencies": {
         "axios": "^1.6.5",
         "axios-cookiejar-support": "^5.0.0",
