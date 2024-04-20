@@ -1,19 +1,33 @@
 # irctc-api
-A package built on top of IRCTC Website APIs to make train tickets , managing user profile faster and simpler. Currently this package only works on NodeJs environment and we were not recommending this to use on browser or any other Javascript environment.
+A package built on top of IRCTC Website APIs to book train tickets, managing user profile faster and simpler. Currently this package only works on NodeJs environment and we were not recommending this to use on browser or any other Javascript environment.
+
+[![NPM Downloads](https://img.shields.io/npm/dw/irctc-api)](https://www.npmjs.com/package/irctc-api)
+[![Node Current](https://img.shields.io/node/v/irctc-api)](https://www.npmjs.com/package/irctc-api)
+[![Contributors](https://img.shields.io/github/contributors/suryavaddiraju/irctc-api.svg)](https://github.com/suryavaddiraju/irctc-api/graphs/contributors)
+[![GitHub License](https://img.shields.io/github/license/suryavaddiraju/irctc-api)](http://www.apache.org/licenses/LICENSE-2.0)
+[![NPM Version](https://img.shields.io/npm/v/irctc-api)](https://www.npmjs.com/package/irctc-api)
+[![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/suryavaddiraju/irctc-api)](https://github.com/suryavaddiraju/irctc-api/issues)
+[![GitHub last commit](https://img.shields.io/github/last-commit/suryavaddiraju/irctc-api)](https://github.com/suryavaddiraju/irctc-api)
+
+## Useful Links
+
+<a href="https://github.com/suryavaddiraju/irctc-api"><img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub Logo" width="50" height="50"/></a> <a href="https://www.npmjs.com/package/irctc-api"><img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg" alt="npm Logo" width="50" height="50"/></a> <a href="https://dev.vaddiraju.in/irctc-api/api_reference"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Read-the-docs.png/330px-Read-the-docs.png" alt="Documentation Logo" width="50" height="50"/></a>
 
 ## Installing
 
 To install the this package, simply type i or install irctc-api using the node package manager
 
-- `npm install irctc-api`
+```shell
+npm install irctc-api
+```
 
 ## Prerequisite
 
-This Package uses [viu](https://github.com/atanunq/viu), A rust module uses iterm image protocol for displaying images.
+This Package uses [viu](https://github.com/atanunq/viu), A rust module uses iterm image protocol for displaying images within System Terminal.
 
 We use that for displaying captcha images on command line for login and bookings as to make your booking flow in a seamless way.
 
-Hence you are required to download the viu executable file related to your OS and Processor Architecture from the [viu release Assets](https://github.com/atanunq/viu/releases/latest) then add the folder where the `viu` is stored in your environment variables.
+Hence you are required to download the viu executable file related to your OS and Processor Architecture from the [viu release Assets](https://github.com/atanunq/viu/releases/latest) then add the folder where the `viu` is stored to your environment variables.
 
 Remeber to add the folder path and not the viu.exe file path in your environment variables.
 
@@ -24,8 +38,8 @@ Remeber to add the folder path and not the viu.exe file path in your environment
 
 - We request to verify whether viu is working or not by giving the below command
 
-```console
-$ viu example.jpeg -t
+```shell
+viu example.jpeg -t
 ```
 
 ### Import
@@ -43,7 +57,7 @@ To send a request, you only need to import the `IRCTC`.
 const { IRCTC } = require("irctc-api");
 ```
 
-```ts
+```js
 // ES6+ example
 import { IRCTC } from "irctc-api";
 ```
@@ -91,13 +105,13 @@ as compared to using Promise chains or callbacks.
 ## Getting Help
 
 Please use these community resources for getting help.
-We use the GitHub issues for tracking bugs and feature requests, but have limited bandwidth to address them.
+We use the [GitHub issues](https://github.com/suryavaddiraju/irctc-api/issues) for tracking bugs and feature requests, but have limited bandwidth to address them.
 
-- Visit [Developer Guide](https://example.com/developer_guide.html) or [API Reference](https://example.com/api_reference.html).
+- Visit [API Reference](https://dev.vaddiraju.in/irctc-api/api_reference).
 
 ## Contributing
 
-Any modifications will be overwritten the next time the `irctc-api` package is updated. To contribute to the package you can check our [generate clients scripts](https://example.com/generate-clients.html).
+Any modifications will be overwritten the next time the `irctc-api` package is updated. To contribute to the package you can check our [contribution](https://dev.vaddiraju.in/irctc-api/contribution) page.
 
 ## License
 
@@ -111,23 +125,21 @@ see LICENSE for more information.
 <summary>
 book
 </summary>
-
-[Command API Reference](https://example.com/api_reference.html#book) / [Input](https://example.com/api_reference.html#book_input) / [Output](https://example.com/api_reference.html#book_output)
-
+<a href="https://dev.vaddiraju.in/irctc-api/api_reference#book">Command API Reference</a> / <a href="https://dev.vaddiraju.in/irctc-api/api_reference#book_input">Input</a> / <a href="https://dev.vaddiraju.in/irctc-api/api_reference#book_output">Output</a>
 </details>
 <details>
 <summary>
 last_transaction
 </summary>
-
-[Command API Reference](https://example.com/api_reference.html#last_transaction) / [Input](https://example.com/api_reference.html#last_transaction_input) / [Output](https://example.com/api_reference.html#last_transaction_output)
-
+<a href="https://dev.vaddiraju.in/irctc-api/api_reference#last_transaction">Command API Reference</a> / <a href="https://dev.vaddiraju.in/irctc-api/api_reference#last_transaction_input">Input</a> / <a href="https://dev.vaddiraju.in/irctc-api/api_reference#last_transaction_output">Output</a>
 </details>
 <details>
 <summary>
 pnr_status
 </summary>
-
-[Command API Reference](https://example.com/api_reference.html#pnr_status) / [Input](https://example.com/api_reference.html#pnr_status_input) / [Output](https://example.com/api_reference.html#pnr_status_output)
-
+<a href="https://dev.vaddiraju.in/irctc-api/api_reference#pnr_status">Command API Reference</a> / <a href="https://dev.vaddiraju.in/irctc-api/api_reference#pnr_status_input">Input</a> / <a href="https://dev.vaddiraju.in/irctc-api/api_reference#pnr_status_output">Output</a>
 </details>
+
+## Copyright
+
+All Rights Reserved. &copy; Vaddiraju Surya Teja, 2024

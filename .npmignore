@@ -2,3 +2,5 @@
 examples/
 test/
 .gitignore
+api_reference.md
+contribution.md
