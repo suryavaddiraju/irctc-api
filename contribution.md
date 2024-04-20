@@ -1,6 +1,8 @@
+---
 layout: page
 title: "Contribution | irctc-api | A Node Js Package to book tickets within system terminal"
 permalink: /contribution
+---
 
 # Contribution
 
