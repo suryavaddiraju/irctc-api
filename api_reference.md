@@ -1,6 +1,8 @@
+---
 layout: page
 title: "API Reference | irctc-api | A Node Js Package to book tickets within system terminal"
 permalink: /api_reference
+---
 
 # API Reference
 
