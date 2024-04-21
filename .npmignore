@@ -4,3 +4,4 @@ test/
 .gitignore
 api_reference.md
 contribution.md
+_config.yml

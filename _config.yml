@@ -1,0 +1,2 @@
+google_analytics: G-L0BXR0ZGW7
+exclude: [lib/,examples/,test/,.gitignore,.npmignore,index.mjs,LICENSE,package.json,.github/,package-lock.json,_config.yml]
