@@ -8,6 +8,7 @@ A package built on top of IRCTC Website APIs to book train tickets, managing use
 [![NPM Version](https://img.shields.io/npm/v/irctc-api)](https://www.npmjs.com/package/irctc-api)
 [![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/suryavaddiraju/irctc-api)](https://github.com/suryavaddiraju/irctc-api/issues)
 [![GitHub last commit](https://img.shields.io/github/last-commit/suryavaddiraju/irctc-api)](https://github.com/suryavaddiraju/irctc-api)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/suryavaddiraju/irctc-api/node.js.yml)](https://github.com/suryavaddiraju/irctc-api/actions/workflows/node.js.yml)
 
 ## Useful Links
 
