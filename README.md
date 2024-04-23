@@ -1,11 +1,10 @@
-# irctc-api
 A package built on top of IRCTC Website APIs to book train tickets, managing user profile faster and simpler. Currently this package only works on NodeJs environment and we were not recommending this to use on browser or any other Javascript environment.
 
 [![NPM Downloads](https://img.shields.io/npm/dw/irctc-api)](https://www.npmjs.com/package/irctc-api)
-[![Node Current](https://img.shields.io/node/v/irctc-api)](https://www.npmjs.com/package/irctc-api)
+[![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsuryavaddiraju%2Firctc-api%2Fmain%2Fpackage.json&query=engines.node&label=node)](https://www.npmjs.com/package/irctc-api)
 [![Contributors](https://img.shields.io/github/contributors/suryavaddiraju/irctc-api.svg)](https://github.com/suryavaddiraju/irctc-api/graphs/contributors)
 [![GitHub License](https://img.shields.io/github/license/suryavaddiraju/irctc-api)](http://www.apache.org/licenses/LICENSE-2.0)
-[![NPM Version](https://img.shields.io/npm/v/irctc-api)](https://www.npmjs.com/package/irctc-api)
+[![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsuryavaddiraju%2Firctc-api%2Fmain%2Fpackage.json&query=version&label=version)](https://www.npmjs.com/package/irctc-api)
 [![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/suryavaddiraju/irctc-api)](https://github.com/suryavaddiraju/irctc-api/issues)
 [![GitHub last commit](https://img.shields.io/github/last-commit/suryavaddiraju/irctc-api)](https://github.com/suryavaddiraju/irctc-api)
 [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/suryavaddiraju/irctc-api/node.js.yml)](https://github.com/suryavaddiraju/irctc-api/actions/workflows/node.js.yml)
@@ -78,9 +77,9 @@ To send a request, you:
 const client = new IRCTC();
 
 const params = {
-  /** input parameters */
+  // refer https://dev.vaddiraju.in/irctc-api/api_reference#book_input
 };
-const command = client.book(params);
+const command = await client.book(params);
 ```
 
 #### Async/await

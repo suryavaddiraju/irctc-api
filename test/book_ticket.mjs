@@ -8,8 +8,8 @@ const params = {
     "to": "PDKN", // Station code
     "journey_date": "20240530", // YYYYMMDD
     "mobile_number": "9876543210", // 10 Digit Mobile Number
-    "userID": "username_here", // Secret User ID
-    "password": "someSecret_here", // Secret Password
+    "userID": "XXXXX", // Secret User ID
+    "password": "XXXXXXX", // Secret Password
     "passengers": [ // Passengers List - Max 4 members for Tatkal and 6 for General Quota
         {
             "age": "22", // Age of Passenger
@@ -26,13 +26,8 @@ const params = {
     ]
 };
 async function custom_command_name(params) {
-    try{
     const irctc = new IRCTC();
     const response = await irctc.book(params);
     console.log(response);
-    }
-    catch(e){
-        throw new Error(e);
-    }
 };
 await custom_command_name(params);

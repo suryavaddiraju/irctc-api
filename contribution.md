@@ -1,10 +1,8 @@
 ---
 layout: page
-title: "Contribution | irctc-api | A Node Js Package to book tickets within system terminal"
+title: "Contribution"
 permalink: /contribution
 ---
-
-# Contribution
 
 You need to fork the repository and then rasie a pull request and when the pull request is approved your changes will be applied to next scheduled release
 

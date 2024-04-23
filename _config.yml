@@ -1,2 +1,5 @@
 google_analytics: G-L0BXR0ZGW7
+author:
+  name: Vaddiraju Surya Teja
+  email: "suryavaddiraju@proton.me"
 exclude: [lib/,examples/,test/,.gitignore,.npmignore,index.mjs,LICENSE,package.json,.github/,package-lock.json,_config.yml]
