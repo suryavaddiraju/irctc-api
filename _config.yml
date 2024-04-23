@@ -1,4 +1,7 @@
 google_analytics: G-L0BXR0ZGW7
+author:
+  name: Vaddiraju Surya Teja
+  email: "suryavaddiraju@proton.me"
 remote_theme: jekyll/minima
 plugins:
 - jekyll-remote-theme

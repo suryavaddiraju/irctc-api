@@ -15,7 +15,8 @@ const params = {
             "age": "22", // Age of Passenger
             "food": "", // Food Preference - Leave as Empty string, if food is not required
             "name": "Virat Kohli", // Full Name of Passenger
-            "sex": "M" // Sex of Passenger - M | F
+            "sex": "M", // Sex of Passenger - M | F
+            "berth":"WS" // optional, Preferred Berth Code - LB | UB | SL | SU | MB | WS
         },
         {
             "age": "21", // Age of Passenger
@@ -23,7 +24,8 @@ const params = {
             "name": "Anushka Sharma", // Full Name of Passenger
             "sex": "F" // Sex of Passenger - M | F
         }
-    ]
+    ],
+    "coach":"D1", // Optional, Preferred Coach Code
 };
 async function custom_command_name(params) {
     try{
