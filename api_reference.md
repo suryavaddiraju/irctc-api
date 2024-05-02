@@ -38,8 +38,7 @@ console.log(response);
 
 `book` function in IRCTC class takes input as a javascript object, where they are explained below
 
-`Mandatory Keys`
-
+- `Mandatory Keys`
 - UPI 
     - Must be a string and have atleast three characters including `@`
     - Must be a active UPI ID issued under NPCI UPI Guidlines
@@ -80,16 +79,13 @@ console.log(response);
     - Must not be expired
     - You have to login atleast once using the password in the IRCTC website before using it here
     - Must verify mobile number and email ID in the portal before using the credentials here
-- coach
-    - Must be a String
-    - Preferred Coach for total ticket
-    - Must be related to the class of the ticket
 - passengers
     - Must be a List and Contains Javascript Object of Each Passenger details
     - Passengers list must contain maximum of 6 passengers for General
     - Passengers list must contain maximum of 4 passengers for tatkal and Premium Tatkal
     - Each passenger details must be enclosed in an javascript object format and include them in passengers list main field
     - Each Passenger Object Contains
+        - `Mandatory Passenger Object Keys`
         - name
             - Must be a string and Mandatory Field
             - The Name of the passenger, who takes the journey
@@ -107,6 +103,7 @@ console.log(response);
             - Must be a string and Mandatory
             - The Food choice need to be empty string if the train does not serves the food
             - acceptable values `"V" | "N" | "D" | ""`
+        - `Optional Passenger Object Keys`
         - berth
             - Must be a string and Optional Parameter - Default to null
             - This is the preferred berth that the passenger is opting and instructing IRCTC to book on the preferred berth
@@ -115,6 +112,11 @@ console.log(response);
         - country
             - Must be a string and Optional Parameter - Defaults to IN
             - ISO Country Code of the Passenger Nationality
+- `Optional Keys`
+- coach
+    - Must be a String
+    - Preferred Coach for total ticket
+    - Must be related to the class of the ticket
 
 The example input is as follows
 
