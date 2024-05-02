@@ -37,6 +37,10 @@
         "email": "suryavaddiraju@proton.me",
         "url": "http://github.com/suryavaddiraju"
     },
+    "funding": {
+        "type": "individual",
+        "url": "https://dev.vaddiraju.in/funding"
+    },
     "bugs": {
         "url": "https://github.com/suryavaddiraju/irctc-api/issues"
     },
