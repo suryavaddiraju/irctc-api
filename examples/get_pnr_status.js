@@ -1,7 +1,7 @@
 import {IRCTC} from "irctc-api";
 const params = {
-    "userID": "username_here", // Secret User ID
-    "password": "someSecret_here", // Secret Password
+    "userID": "XXXXX", // Secret User ID
+    "password": "XXXXXXX", // Secret Password
     "pnr":"457544545" // PNR Number
 };
 async function custom_command_name(params) {

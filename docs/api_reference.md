@@ -117,6 +117,9 @@ console.log(response);
     - Must be a String
     - Preferred Coach for total ticket
     - Must be related to the class of the ticket
+- log
+    - Can be any one of the boolean values such as `true | false`
+    - Default value - `false`
 
 The example input is as follows
 
@@ -148,7 +151,8 @@ The example input is as follows
             "country":"Uk"
         }
     ],
-    "coach":"D1"
+    "coach":"D1",
+    "log":true
 };
 ```
 
