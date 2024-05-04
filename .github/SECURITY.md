@@ -92,7 +92,7 @@ know at one of the email addresses at the top of this article.
 
 On release day, we will push the patch to our public repository, along
 with an updated changelog that describes the issue and credits you. We
-will then issue a PyPI release containing the patch.
+will then issue a npm release containing the patch.
 
 At this point, we will publicise the release. This will involve mails to
 mailing lists, Tweets, and all other communication mechanisms available
