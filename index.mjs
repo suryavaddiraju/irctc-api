@@ -4,6 +4,10 @@ class IRCTC extends main_class{
         super();
     }
     async book(params){
+        if (!(params.hasOwnProperty("log") && typeof params["log"] === 'boolean')){
+            console.log("You have not set any valid log parameter. Setting log to false.\nIf you need to set up logging, please set log parameter to true.");
+            params.log = false;
+        }
         return await super.book(params);
     }
     async last_transaction(params){
