@@ -9,6 +9,21 @@ A package built on top of IRCTC Website APIs to book train tickets, managing use
 [![GitHub last commit](https://img.shields.io/github/last-commit/suryavaddiraju/irctc-api)](https://github.com/suryavaddiraju/irctc-api)
 [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/suryavaddiraju/irctc-api/node.js.yml)](https://github.com/suryavaddiraju/irctc-api/actions/workflows/node.js.yml)
 
+
+> [!NOTE] 
+> ```
+> This irctc-api script for automating IRCTC ticket booking
+> is created strictly for educational purposes. The code and its
+> usage are intended to showcase irctc-api testing capabilities and
+> best practices. Any attempt to use this script for unauthorized
+> access or activities that violate IRCTC terms of service or legal
+> regulations is strictly prohibited. The author(s) and associated
+> entities are not responsible for any misuse or legal consequences 
+> resulting from the use of this script for any unauthorized 
+> activities.
+> ```
+
+
 ## Useful Links
 
 <a href="https://github.com/suryavaddiraju/irctc-api"><img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub Logo" width="50" height="50"/></a> <a href="https://www.npmjs.com/package/irctc-api"><img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg" alt="npm Logo" width="50" height="50"/></a> <a href="https://dev.vaddiraju.in/irctc-api/api_reference"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Read-the-docs.png/330px-Read-the-docs.png" alt="Documentation Logo" width="50" height="50"/></a>
