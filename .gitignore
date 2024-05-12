@@ -128,6 +128,8 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-
 # working directory files
 captcha.jpg
+viu
+bin
+viu.exe
