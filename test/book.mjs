@@ -8,7 +8,7 @@ const params = {
     "to": "PDKN",
     "journey_date": "20240530",
     "mobile_number": "9876543210",
-    "userID": "XXXXXX",
+    "userID": "XXXXXXXX",
     "password": "XXXXXXXXX",
     "passengers": [
         {
@@ -20,9 +20,6 @@ const params = {
     ],
     "log": true
 };
-async function custom_command_name(params) {
-    const irctc = new IRCTC();
-    const response = await irctc.book(params);
-    console.log(response);
-};
-await custom_command_name(params);
+const irctc = new IRCTC();
+const response = await irctc.book(params);
+console.log(response);
