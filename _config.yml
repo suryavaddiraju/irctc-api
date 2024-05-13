@@ -5,4 +5,4 @@ author:
 remote_theme: jekyll/minima
 plugins:
 - jekyll-remote-theme
-exclude: [lib/,examples/,test/,.gitignore,.npmignore,index.mjs,LICENSE,package.json,.github/,package-lock.json,_config.yml]
+exclude: [lib/,examples/,test/,.gitignore,.npmignore,index.mjs,LICENSE,package.json,.github/,package-lock.json,_config.yml,"bin/"]

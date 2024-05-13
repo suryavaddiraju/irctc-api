@@ -9,9 +9,9 @@ following additional notes.
 ## Questions
 
 The GitHub issue tracker is for *bug reports* and *feature requests*. Please do
-not use it to ask questions about how to use Requests. These questions should
+not use it to ask questions about how to use irctc-api. These questions should
 instead be directed to [Stack Overflow](https://stackoverflow.com/). Make sure
-that your question is tagged with the `node-irctc-api` tag when asking it on
+that your question is tagged with the `node.js & api` tag when asking it on
 Stack Overflow, to ensure that it is answered promptly and accurately.
 
 ## Good Bug Reports
