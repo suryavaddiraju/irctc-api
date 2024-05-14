@@ -120,10 +120,15 @@ console.log(response);
 - log
     - Can be any one of the boolean values such as `true | false`
     - Default value - `false`
+- viu
+    - If you want your custom viu to be executed for captcha image, you can specify your path here
+    - Default - irctc-api will install viu binary package based on your os and processor architecture
+
 
 The example input is as follows
 
 ```js
+// some_book.mjs
 {
     "UPI": "9876543210@ybl",
     "class": "2S",
@@ -152,7 +157,8 @@ The example input is as follows
         }
     ],
     "coach":"D1",
-    "log":true
+    "log":true,
+    "viu":"path/to/viu | path/to/viu.exe"
 };
 ```
 
