@@ -1,7 +1,7 @@
 {
   "name": "irctc-api",
   "description": "An exclusive NodeJs only package built on top of IRCTC Website APIs to book train tickets, managing user profile faster and simpler from anywhere in the world",
-  "version": "2.0.8",
+  "version": "2.0.9",
   "scripts": {
     "preinstall": "node ./lib/preinstall.mjs",
     "postinstall": "node ./lib/postinstall.mjs",
