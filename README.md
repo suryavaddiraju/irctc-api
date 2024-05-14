@@ -42,20 +42,21 @@ This Package uses [viu](https://github.com/atanunq/viu), A rust module uses iter
 
 We use that for displaying captcha images on command line for login and bookings as to make your booking flow in a seamless way.
 
-Hence you are required to download the viu executable file related to your OS and Processor Architecture from the [viu release Assets](https://github.com/atanunq/viu/releases/latest) then add the folder where the `viu` is stored to your environment variables.
+`irctc-api` automatically installs `viu` binary based on your os and processor architecture, If we could not find your viu binary related to your processor and os, you are required to install `viu` through their standard installation.
 
-Remeber to add the folder path and not the viu.exe file path in your environment variables.
+Then provide `viu` binary path in params as
+
+```json
+{
+  "train_number": "11020",
+  "viu":"path/to/binary/viu | path/to/binary/viu.exe"
+}
+```
 
 
 ### Notes
 
 - Currently this project is designed to accept only UPI Collect request as payment option and other payment modes are not supported as of now. When the payment request is initiated, The command line will display the payment request details such that you need to complete the payment from your UPI mobile App.
-
-- We request to verify whether viu is working or not by giving the below command
-
-```shell
-viu example.jpeg -t
-```
 
 ### Import
 
