@@ -1,11 +1,8 @@
 .github/
+docs/
 examples/
 test/
 .gitignore
-api_reference.md
-contribution.md
-_config.yml
-captcha.jpg
 captcha.jpg
 viu
 bin/

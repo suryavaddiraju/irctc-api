@@ -1,25 +1,35 @@
 import {IRCTC} from "irctc-api";
-const params = {
-    "UPI": "9876543210@paytm",
-    "class": "2S",
-    "quota": "GN",
-    "train_number": "17201",
-    "from": "GNT",
-    "to": "PDKN",
-    "journey_date": "20240530",
-    "mobile_number": "9876543210",
-    "userID": "XXXXXXXX",
-    "password": "XXXXXXXXX",
-    "passengers": [
-        {
-            "age": "22",
-            "food": "",
-            "name": "Virat Kohli",
-            "sex": "M"
-        },
-    ],
-    "log": true
+
+async function custom_function_name() {
+    const irctc = new IRCTC({
+        "userID": "XXXXX", // Secret User ID
+        "password": "XXXXXXXXX", // Secret Password
+    });
+    const params = {
+        "payment": "9876543210@pthdfc",
+        "class": "2S",
+        "quota": "GN",
+        "train": "17201",
+        "from": "GNT",
+        "to": "PDKN",
+        "date": "20240530",
+        "mobile": "9876543210",
+        "passengers": [
+            {
+                "age": 40,
+                "name": "Virat Kohli",
+                "sex": "M"
+            },
+            {
+                "age": 40,
+                "name": "Anushka Sharma",
+                "sex": "F"
+            }
+        ]
+    };
+    const response = await irctc.book(params);
+    return response;
 };
-const irctc = new IRCTC();
-const response = await irctc.book(params);
-console.log(response);
+
+const ticket = await custom_function_name();
+console.log(ticket);

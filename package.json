@@ -1,9 +1,8 @@
 {
   "name": "irctc-api",
   "description": "An exclusive NodeJs only package built on top of IRCTC Website APIs to book train tickets, managing user profile faster and simpler from anywhere in the world",
-  "version": "2.0.13",
+  "version": "3.0.1",
   "scripts": {
-    "postinstall": "node ./lib/postinstall.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -47,7 +46,6 @@
   },
   "homepage": "https://dev.vaddiraju.in/irctc-api",
   "files": [
-    "index.mjs",
     "lib",
     "LICENSE",
     "README.md",
@@ -55,16 +53,14 @@
     ".npmignore"
   ],
   "dependencies": {
-    "axios": "^1.6.8",
-    "axios-cookiejar-support": "^5.0.2",
-    "cheerio": "^1.0.0-rc.12",
-    "tough-cookie": "^4.1.4"
+    "tough-cookie": "^5.0.0",
+    "undici": "^6.20.1"
   },
   "engines": {
     "node": ">20.0.0",
     "npm": ">10.0.0"
   },
-  "main": "./index.mjs",
-  "exports": "./index.mjs",
+  "main": "./lib/index.mjs",
+  "exports": "./lib/index.mjs",
   "type": "module"
 }

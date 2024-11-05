@@ -48,7 +48,6 @@ Then provide `viu` binary path in params as
 
 ```json
 {
-  "train_number": "11020",
   "viu":"path/to/binary/viu | path/to/binary/viu.exe"
 }
 ```
@@ -56,7 +55,7 @@ Then provide `viu` binary path in params as
 
 ### Notes
 
-- Currently this project is designed to accept only UPI Collect request as payment option and other payment modes are not supported as of now. When the payment request is initiated, The command line will display the payment request details such that you need to complete the payment from your UPI mobile App.
+- Currently this project is designed to accept only UPI Collect request and IRCTC wallet as payment option and other payment modes are not supported as of now. When the payment request is initiated, The command line will display the payment request details such that you need to complete the payment from your UPI mobile App for UPI payment method.
 
 ### Import
 
@@ -65,6 +64,12 @@ This Package exports a class named `IRCTC` which contains three functions.
 - book
 - last_transaction
 - pnr_status
+- master_passengers
+
+Other variables export
+- countries
+- stations
+
 
 To send a request, you only need to import the `IRCTC`.
 
@@ -90,7 +95,9 @@ To send a request, you:
 
 ```js
 // a client can be shared by different commands. But it is currently in development untill then use client seperately.
-const client = new IRCTC();
+const client = new IRCTC({
+  // irctc_class_params
+});
 
 const params = {
   // refer https://dev.vaddiraju.in/irctc-api/api_reference#book_input
