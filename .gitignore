@@ -131,5 +131,7 @@ dist
 # working directory files
 captcha.jpg
 viu
-bin
+bin/
 viu.exe
+playground/
+proxy/
