@@ -12,7 +12,7 @@ async function custom_function_name() {
         "train": "17201", // 5 Digit Train Number - string
         "from": "GNT", // Station code
         "to": "PDKN", // Station code
-        "date": "20240530", // YYYYMMDD
+        "date": "20241231", // YYYYMMDD
         "mobile": "9876543210", // 10 Digit Mobile Number
         "passengers": [ // Passengers List - Max 4 members for Tatkal and 6 for General Quota
             {

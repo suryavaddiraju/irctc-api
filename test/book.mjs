@@ -12,7 +12,7 @@ async function custom_function_name() {
         "train": "17201",
         "from": "GNT",
         "to": "PDKN",
-        "date": "20240530",
+        "date": "20241231",
         "mobile": "9876543210",
         "passengers": [
             {
