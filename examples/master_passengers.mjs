@@ -21,13 +21,13 @@ const book_params = {
         {
             "age": 40,
             "name": "Virat Kohli",
-            "sex": "M",
+            "gender": "M",
             "berth":"SL"
         },
         {
             "age": 40,
             "name": "Anushka Sharma",
-            "sex": "F",
+            "gender": "F",
             "country":"US",
             "passport":"XYZ12345",
             "DOB":"19803112"
