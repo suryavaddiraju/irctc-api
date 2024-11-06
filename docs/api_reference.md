@@ -61,11 +61,12 @@ console.log(response);
 The example input is as follows
 
 ```js
+const irctc = new IRCTC(
 {
     "userID":"XXXXXX",
     "password":"XXXXXXXXX",
-    "viu":"./some/loaction/to/file.exe | ./some/loaction/to/file"
-};
+    "viu":"./some/loaction/to/file.exe | ./some/loaction/to/file" // Optional
+});
 ```
 
 
@@ -109,7 +110,7 @@ The example input is as follows
 
 - date
     - Must be a String and in `YYYYMMDD` format
-    - The date on which you are boarding the train
+    - The date on which your train is at from station that you are trying to board
 - mobile
     - Must be as string and length must be 10
     - Active Indian Mobile Number
@@ -126,10 +127,10 @@ The example input is as follows
             - Must match match with any one of their Nationally accepted ID Cards
             - The Name is sliced to 16 characters if you give more than 16 characters
         - age
-            - Must be string and Mandatory
+            - Must be a Integer and Mandatory
             - The age of the passenger
-            - Must be between 5 and 125
-        - sex
+            - Must be between 0 and 125
+        - gender
             - Must be a string and mandatory
             - Gender of the passenger
             - Acceptable genders `M or F or T`
@@ -143,7 +144,7 @@ The example input is as follows
             - Must be a string and Optional Parameter - Defaults to IN
             - ISO Country Code of the Passenger Nationality
             - if country is not IN then
-            - `Mandatory Passenger`
+            - `Mandatory Passenger objects if foreigner`
             - passport
                 - valid passport number
                 - must be between 6 and 9 digits
@@ -168,7 +169,7 @@ The example input is as follows
 ```js
 // some_book.mjs
 {
-    "payment": "wallet",
+    "payment": "wallet", // for UPI Payment - "payment": "9876543210@pthdfc"
     "class": "2S",
     "quota": "GN",
     "train": "17201",
@@ -180,13 +181,13 @@ The example input is as follows
         {
             "age": 40,
             "name": "Virat Kohli",
-            "sex": "M",
+            "gender": "M",
             "berth":"SL"
         },
         {
             "age": 40,
             "name": "Anushka Sharma",
-            "sex": "F",
+            "gender": "F",
             "country":"US",
             "passport":"XYZ12345",
             "DOB":"19803112"
@@ -205,6 +206,9 @@ The output is to be standardized and will be documented in future, currently Raw
 
 It is a function of irctc class which gives list of master passengers attached to the userID
 - You can directly select your passenger from the list output and pass it in the passenger list of book function with additional to other passengers
+
+[Example Usage](https://github.com/suryavaddiraju/irctc-api/blob/main/examples/master_passengers.mjs)
+
 
 ```js
 import {IRCTC} from "irctc-api";

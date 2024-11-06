@@ -18,12 +18,12 @@ async function custom_function_name() {
             {
                 "age": 40, // Age of Passenger - Integer
                 "name": "Virat Kohli", // Full Name of Passenger
-                "sex": "M" // Sex of Passenger - M | F | T
+                "gender": "M" // Gender of Passenger - M | F | T
             },
             {
                 "age": 40, // Age of Passenger - Integer
                 "name": "Anushka Sharma", // Full Name of Passenger
-                "sex": "F" // Sex of Passenger - M | F | T
+                "gender": "F" // Gender of Passenger - M | F | T
             }
         ]
     };

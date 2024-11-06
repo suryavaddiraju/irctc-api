@@ -18,12 +18,12 @@ async function custom_function_name() {
             {
                 "age": 40,
                 "name": "Virat Kohli",
-                "sex": "M"
+                "gender": "M"
             },
             {
                 "age": 40,
                 "name": "Anushka Sharma",
-                "sex": "F"
+                "gender": "F"
             }
         ]
     };
