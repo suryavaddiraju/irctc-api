@@ -72,6 +72,30 @@ console.log(response);
 - viu
     - the path to viu folder, if it doesnot work it will fall back to auto download
     - if it not works it throws an error
+- gcloud
+    - This params can be `JSON String || Javascript Object || JSON File Buffer`
+    - Google Cloud Service Account Credentials having permission of `serviceusage.services.use`
+    - if this parameter is present we won't use viu for that process
+    - `Note: This service is chargeable by Google and follow their terms and conditions`
+    - To try this use below steps
+        1. Create a Google Cloud account (Skip this step if you already have a Google Cloud account).
+        2. Create a new, separate project.
+        3. In the newly created project:
+        - Search for `IAM & Admin` in the Google Cloud Console.
+        - Go to `Roles` under IAM.
+        4. Create a new role:
+        - Set the title, description, and ID of your choice.
+        - Set the Role Launch Stage to `General Availability`.
+        5. Add the `serviceusage.services.use` permission to the role and click **Create**.
+        6. Create a A New Service Account within IAM & Admin Page In `Service account details` - Give a Name, id, description of your choice and then in
+        - `Service account details` - Give a Name, id, description of your choice
+        - `Grant this service account access to project` - Attach the role that you created in previous step by searching your given name
+        - `Grant users access to this service account (optional)` - Leave Empty
+        - Then Click **Done**
+        7. Go To service Accounts List of your project and Click on the email that you created in previous step download and Go to `Keys`and then `Create New Key - JSON`. You will get a json file in your browser downloads - `Keep this JSON`
+        8. Search for `Cloud Vision API` in the Google Cloud Console and `Enable` it (Ignore, if its not already enabled)
+
+
 
 The example input is as follows
 
@@ -81,6 +105,19 @@ const irctc = new IRCTC(
     "userID":"XXXXXX",
     "password":"XXXXXXXXX",
     "viu":"./some/loaction/to/file.exe | ./some/loaction/to/file" // Optional
+    "gcloud":{
+        "type": "service_account",
+        "project_id": "vision-api",
+        "private_key_id": "b0357d061ce2c96737d96c2",
+        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqdyztLFNG\n-----END PRIVATE KEY-----\n",
+        "client_email": "default@vision-api.iam.gserviceaccount.com",
+        "client_id": "12345678901234567",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://oauth2.googleapis.com/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/default%40vision-api.iam.gserviceaccount.com",
+        "universe_domain": "googleapis.com"
+    }
 });
 ```
 
@@ -88,6 +125,12 @@ const irctc = new IRCTC(
 ## book_input
 
 `book` function in IRCTC class takes input as a javascript object, where they are explained below
+
+```
+Note:
+
+for book_input function, there are a set of mandatory keys and a set of optional keys. Optional Keys means they're not compulsory to be passed.
+```
 
 - `Mandatory Keys`
 - payment
@@ -174,8 +217,10 @@ const irctc = new IRCTC(
     - Must be a string and should match the with the list of existing station code names
     - Must be short code of the station from where you are boarding
     - The Train must pass by and have a stop at this station
--gst
+    - board is the station where the passenger will be actually catching the train. this should not be confused with the mandatory from parameter which is a param for defining the starting point for the ticket. for eg. the passenger may book a train ticket from DEL to MUM, but he may prefer to join the journey at any intermediate station like AGC.
+- gst
     - Must be a string and it must be the 17 digit GSTIN number
+    - This param is not necessary unless you are a business owner and want to claim the gst later.
 
 
 
